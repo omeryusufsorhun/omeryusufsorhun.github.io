@@ -11979,7 +11979,7 @@ div#hero h3 {
 
 div#hero > div {
   border-top: transparent;
-  border-bottom: transparent;
+  border-bottom: solid 1px black;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -13594,13 +13594,6 @@ div#products div.products-carousel div.owl-nav > div:hover {
   color: #000;
 }
 
-/*!
- * [Team section - Table of contents]
- * 1. Wrapper | #team
- * 2. Left column | .team-left
- * 3. Content wrapper | .team-member
- * 4. Content container | .team-wrap
- */
 div#team {
   height: auto;
 }
@@ -13762,7 +13755,6 @@ div#team div.team-wrap div img {
   object-fit: cover;
   width: 100%;
   height: auto;
-  position: relative;
   top: -1px;
 }
 @media (max-width: 991.98px) {

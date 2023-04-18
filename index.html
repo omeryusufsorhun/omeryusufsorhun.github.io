@@ -29,7 +29,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 
-  <title>Brutal - A Brutalist HTML Template</title>
+  <title>ÖYS | Portfolio</title>
   <meta name="description"
     content="A Brutalist HTML Template built with Bootstrap v4. Includes 2 Landing Pages, 2 Coming Soon Pages and 2 Countdown Pages with working contact and subscription forms.">
   <meta name="abstract"
@@ -223,6 +223,119 @@
     </div>
   </div>
 
+  <div class="modal fade detail-modal-1" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!--Modal header-->
+        <div class="modal-header">
+
+          <!--Modal title-->
+          <h5 class="modal-title">Details</h5>
+
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>HTML CSS Javascript</h6>
+          <h6>Reactjs Mongodb Expressjs.</h6>
+
+
+        </div><!--End modal body-->
+
+      </div><!--end modal content-->
+    </div>
+  </div>
+  <div class="modal fade detail-modal-2" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!--Modal header-->
+        <div class="modal-header">
+
+          <!--Modal title-->
+          <h5 class="modal-title">Details</h5>
+
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Nodejs</h6>
+          <h6>Nest</h6>
+          <h6>Postman</h6>
+          <h6></h6>
+
+        </div><!--End modal body-->
+
+      </div><!--end modal content-->
+    </div>
+  </div>
+  <div class="modal fade detail-modal-3" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!--Modal header-->
+        <div class="modal-header">
+
+          <!--Modal title-->
+          <h5 class="modal-title">Details</h5>
+
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Mongo</h6>
+          <h6>Mysql</h6>
+          <h6>SQL</h6>
+          <h6>Postgre</h6>
+
+        </div><!--End modal body-->
+
+      </div><!--end modal content-->
+    </div>
+  </div>
+  <div class="modal fade detail-modal-4" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!--Modal header-->
+        <div class="modal-header">
+
+          <!--Modal title-->
+          <h5 class="modal-title">Details</h5>
+
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Java Rest Assured & Locust Performance</h6>
+          <h6>Knowledge on Java, Python, SQL,JSON, CSS, HTML</h6>
+          <h6>Agile Testing and Life Cycle</h6>
+          <h6>Automating Tests / Selenium & Cucumber</h6>
+          <h6>API Tests / Postman & Karate Framework</h6>
+
+        </div><!--End modal body-->
+
+      </div><!--end modal content-->
+    </div>
+  </div>
+
 
   <!--preloader-->
   <div class="preloader preloader-xl">
@@ -248,15 +361,15 @@
       </div>
       <div class="col-sm-2 navigation">
         <ul class="navlist">
-          <li class="anchor"><a href="index.html#features">About</a></li><!--
+          <li class="anchor"><a href="index.html#hero">Resume</a></li><!--
           -->
-          <li class="anchor"><a href="index.html#services">Skills</a></li><!--
+          <li class="anchor"><a href="index.html#services">Experiences</a></li><!--
           -->
           <li class="anchor"><a href="index.html#prices">Education</a></li>
         </ul>
       </div>
       <div class="col-sm-2 anchor">
-        <a class="contact" href="index.html#contact">Contact</a>
+        <a class="anchor contact" href="index.html#contact">Contact</a>
       </div>
     </div>
   </nav><!--end nav-->
@@ -352,7 +465,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-12 order-1 order-lg-2 order-md-1 order-sm-1 text-center services-center">
-        <h3>I Do<br /> Things</h3>
+        <h3>Experiences</h3>
       </div>
       <div class="col-lg-4 col-md-12 order-3">
         <div class="row elem-border services-right">
@@ -384,10 +497,12 @@
             <div class="team-wrap">
               <p><span>Frontend</span></p>
               <div>
-                <img src="../img/team1.jpg" alt="">
+                <img src="./app/img/team1.jpg" alt="">
               </div>
               <span class="team-member-name">
-                <a class="btl-anchor" href="#">React - Vue - Svelte - Next</a>
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-1">React - Vue -
+                  Svelte</a>
+
               </span>
             </div>
           </div>
@@ -396,10 +511,23 @@
             <div class="team-wrap">
               <p><span>Backend</span></p>
               <div>
-                <img src="../img/team1.jpg" alt="">
+                <img src="./app/img/team1.jpg" alt="">
               </div>
               <span class="team-member-name">
-                <a class="btl-anchor" href="#">Node - Nest - Express</a>
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-2">Node - Nest -
+                  Express</a>
+              </span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-wrap">
+              <p><span>Software Testing</span></p>
+              <div>
+                <img src="./app/img/team1.jpg" alt="">
+              </div>
+              <span class="team-member-name">
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-4">Unit - Manual -
+                  Automated - API</a>
               </span>
             </div>
           </div>
@@ -408,46 +536,33 @@
             <div class="team-wrap">
               <p><span>Database</span></p>
               <div>
-                <img src="../img/team1.jpg" alt="">
+                <img src="./app/img/team1.jpg" alt="">
               </div>
               <span class="team-member-name">
-                <a class="btl-anchor" href="#">Mongo - Mysql - SQL</a>
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-3">Mongo - Mysql - SQL</a>
               </span>
             </div>
           </div>
 
-          <div class="team-member">
-            <div class="team-wrap">
-              <p><span>Software Testing</span></p>
-              <div>
-                <img src="../img/team1.jpg" alt="">
-              </div>
-              <span class="team-member-name">
-                <a class="btl-anchor" href="#">Unit - Manual - Automated - API</a>
-              </span>
-            </div>
-          </div>
 
-          <div class="team-member">
-            <div class="team-wrap">
-              <p><span>Mongo</span></p>
-              <div>
-                <img src="../img/team2.jpg" alt="">
-              </div>
-              <span class="team-member-name">
-                <a class="btl-anchor">Rose Underwood</a>
-              </span>
-            </div>
-          </div>
+
+
 
 
         </div>
         <div class="team-carousel-nav"></div>
       </div>
-    </div><!--end team-->
+    </div>
+    <div id="hero" class="row elem-border">
+
+      <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+        <a class="cta" target="_blank" href="./app/img/cv_omeryusuf_sorhun.pdf">
+          <span>Resume</span>
+        </a>
+      </div>
+    </div><!--endtagline-->
 
 
-    <!--Contact-->
     <div id="contact" class="row elem-border">
       <div class="col-lg-2 col-md-12 order-2 order-lg-1 order-md-2 contact-left">
         <ul id="social">
@@ -456,7 +571,8 @@
           <li><a href="https://www.instagram.com/omeryusufsrhn/" target="_blank" class="contact">Instagram</a></li>
         </ul>
       </div>
-      <div class="col-lg-10 col-md-12 order-1 order-lg-2 order-md-1 contact-right">
+
+      <div class="col-lg-10 col-md-12 order-1 order-lg-2 order-md-1 contact-right" id="contact">
         <div class="row">
           <div class="col-md-3 col-sm-12 contact-title">
             <h3>Contact Form</h3>
@@ -507,9 +623,11 @@
 
   <!--Footer-->
   <footer class="container-fluid">
+
+
     <div class="row elem-border">
-      <div class="col-12 text-right">
-        <p><a href="https://www.michaelpalmerwebdesign.com/">2023 ÖYS</a></p>
+      <div class="col-12 text-center">
+        <p>2023 ÖYS</p>
       </div>
     </div>
   </footer><!--end footer-->
