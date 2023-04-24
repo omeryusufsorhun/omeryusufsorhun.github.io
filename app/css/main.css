@@ -12556,7 +12556,7 @@ div#prices div.prices-right > div p:after {
 div#prices div.prices-right > div h4 {
   height: calc(240px - 1px);
   line-height: calc(240px - 15px);
-  font-size: 3.998em;
+  font-size: 36px;
 }
 @media (max-width: 991.98px) {
   div#prices div.prices-right > div h4 {
