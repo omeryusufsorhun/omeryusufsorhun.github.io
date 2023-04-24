@@ -6,6 +6,12 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
+  <script>
+    if (window.location.hash) {
+      window.location.href = window.location.href.replace(/\/?#/, '');
+    }
+
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110940506-1"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -15,6 +21,7 @@
       emailjs.init("4y53nE57BGeNERzC4");
     })();
   </script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -24,6 +31,54 @@
     gtag('config', 'UA-110940506-1');
   </script>
   <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      if (window.location.href.endsWith("index.html#")) {
+        window.history.replaceState({}, document.title, window.location.href.replace("index.html#", "index.html"));
+      } else if (window.location.href.endsWith("index.html")) {
+        window.history.replaceState({}, document.title, window.location.href.replace("index.html", ""));
+      }
+    });
+
+    // Diğer kodlar buraya gelecek
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      if (window.location.href.endsWith("index.html")) {
+        window.history.replaceState({}, document.title, window.location.href.replace("index.html", "").replace("#", "/#"));
+      } else if (window.location.href.indexOf("#") === 0) {
+        window.history.replaceState({}, document.title, window.location.href.substr(1));
+      }
+    });
+
+    const hedefLink = document.querySelector("a[href='#team']");
+    const hedefDiv = document.querySelector("#team");
+
+    hedefLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      hedefDiv.scrollIntoView({ behavior: "smooth" });
+      setTimeout(function () {
+        hedefDiv.classList.add("hover");
+      }, 1000);
+    });
+
+    window.onload = function () {
+      let hash = window.location.hash.substr(1);
+      if (hash === "team") {
+        window.location.hash = "#technologies";
+      } else if (hash === "prices") {
+        window.location.hash = "education";
+      } else if (hash === "services") {
+        window.location.hash = "experiences";
+      }
+    }
+
+
+  </script>
+  <script>
+
+
     function removeJobBrTag() {
       var jobBrTags = document.querySelectorAll("#badiworks-br .job");
 
@@ -45,7 +100,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 
-  <title>Brutal - A Brutalist HTML Template</title>
+  <title>ÖYS | Portfolio</title>
   <meta name="description"
     content="A Brutalist HTML Template built with Bootstrap v4. Includes 2 Landing Pages, 2 Coming Soon Pages and 2 Countdown Pages with working contact and subscription forms.">
   <meta name="abstract"
@@ -59,13 +114,31 @@
   <link id="main-css" data-mode="./css/main.nightmode.min.css" rel="stylesheet" href="./app/css/main.css">
   <link rel="stylesheet" href="./app/css/vendor/owl.carousel.css">
   <link rel="stylesheet" href="./app/css/vendor/owl.theme.default.css">
+  <link rel="icon" type="image/x-icon" href="./app/img/icons8-black-and-white-50.png">
+
   <script src="./app/js/nightmode.js"></script>
   <script src="./app/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="./app/js/vendor/bootstrap.bundle.js"></script>
   <script src="./app/js/vendor/owl.carousel.js"></script>
   <script src="./app/js/main.js"></script>
 
+  <script>
+    function changeHash() {
+      let hash = window.location.hash.substr(1);
+      if (hash === "team") {
+        window.location.hash = "#technologies";
+      }
+      if (hash === "prices") {
+        window.location.hash = "education";
+      }
+      if (hash === "services") {
+        window.location.hash = "experiences";
+      }
 
+    }
+
+    window.addEventListener("hashchange", changeHash);
+  </script>
 
 
 
@@ -209,7 +282,7 @@
         <!--Modal body-->
         <div class="modal-body text-center">
           <h6>Fundamental knowledge on <b>Java, Python, SQL, JSON.</b></h6>
-          <h6><b>Agile</b> Testing and <b>Life Cycle</b></h6>
+          <h6><b>Agile</b> Testing and <b>Life Cycle.</b></h6>
           <h6>I do automation tests with <b>Selenium</b> and <b>Cucumber.</b></h6>
           <h6>I do api tests with <b>Postman</b> and <b>Karate framework.</b></h6>
 
@@ -567,7 +640,7 @@
 
       <div class="col-xl-12 col-lg-12 col-md-12 text-center">
         <a class="cta" target="_blank" href="./app/img/cv_omeryusuf_sorhun.pdf">
-          <span>Skills</span>
+          <span>Resume</span>
         </a>
       </div>
     </div><!--endtagline-->
@@ -630,6 +703,7 @@
     </script>
     <script>
 
+
       if (window.innerWidth < 768) {
         var br = document.createElement("br");
         var targetElement = document.getElementById("job");
@@ -647,7 +721,7 @@
   <footer class="container-fluid">
     <div class="row elem-border ">
       <div class="col-12 text-center d-flex justify-content-center align-items-center">
-        <p><a href="https://www.michaelpalmerwebdesign.com/">2023 / ÖYS - © Some rights reserved.</a></p>
+        <p>ÖYS © Some rights reserved.</p>
       </div>
     </div>
   </footer><!--end footer-->

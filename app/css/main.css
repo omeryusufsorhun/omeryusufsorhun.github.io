@@ -13597,6 +13597,11 @@ div#team > div {
 div#team:hover .team-left {
   background: #000;
 }
+
+#team:target {
+  background-color: black;
+  background: black;
+}
 div#team:hover .team-left h3 {
   color: #fff;
 }
