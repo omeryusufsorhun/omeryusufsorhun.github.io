@@ -12566,6 +12566,7 @@ div#prices div.prices-right > div h4 {
     display: block;
   }
 }
+
 @media (max-width: 767.98px) {
   div#prices div.prices-right > div h4 {
     height: auto;
