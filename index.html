@@ -58,23 +58,23 @@
       window.onload = function () {
         let hash = window.location.hash.substr(1);
         if (hash === "#team") {
-          window.location.hash = "technologies";
+          window.location.hash = "#technologies";
         } else if (hash === "#prices") {
-          window.location.hash = "education";
+          window.location.hash = "#education";
         } else if (hash === "#services") {
-          window.location.hash = "experiences";
+          window.location.hash = "#experiences";
         }
       };
       function changeHash() {
         let hash = window.location.hash;
         if (hash === "#team") {
-          window.location.hash = "technologies";
+          window.location.hash = "#technologies";
         }
         if (hash === "#prices") {
-          window.location.hash = "education";
+          window.location.hash = "#education";
         }
         if (hash === "#services") {
-          window.location.hash = "experiences";
+          window.location.hash = "#experiences";
         }
         console.log(window.location.hash);
       }
