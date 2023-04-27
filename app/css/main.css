@@ -12319,8 +12319,8 @@ div#services a:after {
   transition: left 0.3s ease-in-out;
 }
 div#services p {
-  margin-bottom: 30px;
-  width: 50%;
+  margin-bottom: 10px;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   div#services p {
@@ -13599,8 +13599,6 @@ div#team:hover .team-left {
 }
 
 #team:target {
-  background-color: black;
-  background: black;
 }
 div#team:hover .team-left h3 {
   color: #fff;
@@ -13632,7 +13630,6 @@ div#team div.team-carousel-wrap div.team-carousel-nav {
 div#team div.team-carousel-wrap div.team-carousel .owl-nav {
   position: absolute;
   bottom: -60px;
-  border-bottom: 1px black solid;
   width: 100%;
   margin: 0;
 }

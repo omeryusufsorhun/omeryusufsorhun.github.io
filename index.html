@@ -1,868 +1,669 @@
 <!DOCTYPE html>
 <html lang="en" class="nightmode-off">
-  <meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
-  <head>
-    <script>
-      if (window.location.hash) {
-        window.location.href = window.location.href.replace(/\/?#/, "");
+<head>
+  <script>
+
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110940506-1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("4y53nE57BGeNERzC4");
+    })();
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-110940506-1");
+  </script>
+
+  <script>
+
+  </script>
+
+  <script>
+    function removeJobBrTag() {
+      var jobBrTags = document.querySelectorAll("#badiworks-br .job");
+
+      for (var i = 0; i < jobBrTags.length; i++) {
+        jobBrTags[i].parentNode.removeChild(jobBrTags[i]);
       }
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-110940506-1"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("4y53nE57BGeNERzC4");
-      })();
-    </script>
+    }
 
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 768) {
+        removeJobBrTag();
       }
-      gtag("js", new Date());
-      gtag("config", "UA-110940506-1");
-    </script>
+    });
+  </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        console.log(window.location.href);
-        console.log(window.location.hash);
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-        if (window.location.href.endsWith("index.html#")) {
-          window.history.replaceState(
-            {},
-            document.title,
-            window.location.href.replace("index.html#", "index.html")
-          );
-        } else if (window.location.href.endsWith("index.html")) {
-          window.history.replaceState(
-            {},
-            document.title,
-            window.location.href.replace("index.html", "")
-          );
-        }
-      });
+  <title>ÖYS | Portfolio</title>
 
-      window.onload = function () {
-        let hash = window.location.hash.substr(1);
-        if (hash === "#team") {
-          window.location.hash = "#technologies";
-        } else if (hash === "#prices") {
-          window.location.hash = "#education";
-        } else if (hash === "#services") {
-          window.location.hash = "#experiences";
-        }
+  <base />
 
-        function changeHash() {
-          let hash = window.location.hash;
-          if (hash === "#team") {
-            window.location.hash = "#technologies";
-          }
-          if (hash === "#prices") {
-            window.location.hash = "#education";
-          }
-          if (hash === "#services") {
-            window.location.hash = "#experiences";
-          }
-          console.log(window.location.hash);
-          window.addEventListener("hashchange", changeHash);
-        }
-      };
-    </script>
+  <link id="main-css" data-mode="./css/main.nightmode.min.css" rel="stylesheet" href="./app/css/main.css" />
+  <link rel="stylesheet" href="./app/css/vendor/owl.carousel.css" />
+  <link rel="stylesheet" href="./app/css/vendor/owl.theme.default.css" />
+  <link rel="icon" type="image/x-icon" href="./app/img/icons8-black-and-white-50.png" />
 
-    <script>
-      function removeJobBrTag() {
-        var jobBrTags = document.querySelectorAll("#badiworks-br .job");
+  <script src="./app/js/nightmode.js"></script>
+  <script src="./app/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="./app/js/vendor/bootstrap.bundle.js"></script>
+  <script src="./app/js/vendor/owl.carousel.js"></script>
+  <script src="./app/js/main.js"></script>
 
-        for (var i = 0; i < jobBrTags.length; i++) {
-          jobBrTags[i].parentNode.removeChild(jobBrTags[i]);
-        }
-      }
+  <script></script>
+</head>
 
-      window.addEventListener("resize", function () {
-        if (window.innerWidth >= 768) {
-          removeJobBrTag();
-        }
-      });
-    </script>
+<body class="of-hidden">
+  <div class="modal fade template-modal" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Frontend Developer</h5>
 
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-    <title>ÖYS | Portfolio</title>
-
-    <base />
-
-    <link
-      id="main-css"
-      data-mode="./css/main.nightmode.min.css"
-      rel="stylesheet"
-      href="./app/css/main.css"
-    />
-    <link rel="stylesheet" href="./app/css/vendor/owl.carousel.css" />
-    <link rel="stylesheet" href="./app/css/vendor/owl.theme.default.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./app/img/icons8-black-and-white-50.png"
-    />
-
-    <script src="./app/js/nightmode.js"></script>
-    <script src="./app/js/vendor/jquery-3.3.1.min.js"></script>
-    <script src="./app/js/vendor/bootstrap.bundle.js"></script>
-    <script src="./app/js/vendor/owl.carousel.js"></script>
-    <script src="./app/js/main.js"></script>
-
-    <script></script>
-  </head>
-
-  <body class="of-hidden">
-    <div class="modal fade template-modal" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Frontend Developer</h5>
-
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body">
-            <h6>Experience</h6>
-            <p>
-              * Flutter Developer Flutter is preferred in order to support all
-              platforms such as iOS, Android and Web effectively.
-            </p>
-            <p>
-              * Fixing existing bugs, improving user experience, designing
-              necessary pages, using data from api
-            </p>
-            <p>
-              * Unit tests with agile methods, API tests with postman and user
-              test on multiple platforms
-            </p>
-          </div>
-          <!--End modal body-->
-
-          <!--Modal footer-->
-          <div class="modal-footer text-center">
-            <p>
-              <a href="https://www.kolayfirsat.com/" target="_blank"
-                >kolayfirsat.com</a
-              >
-            </p>
-          </div>
-          <!--end modal footer-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Experience</h6>
+          <p>
+            * Flutter Developer Flutter is preferred in order to support all
+            platforms such as iOS, Android and Web effectively.
+          </p>
+          <p>
+            * Fixing existing bugs, improving user experience, designing
+            necessary pages, using data from api
+          </p>
+          <p>
+            * Unit tests with agile methods, API tests with postman and user
+            test on multiple platforms
+          </p>
+        </div>
+        <!--End modal body-->
+
+        <!--Modal footer-->
+        <div class="modal-footer text-center">
+          <p>
+            <a href="https://www.kolayfirsat.com/" target="_blank">kolayfirsat.com</a>
+          </p>
+        </div>
+        <!--end modal footer-->
       </div>
+      <!--end modal content-->
     </div>
+  </div>
 
-    <div class="modal fade detail-modal-1" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content text-center">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title text-center">Frontend Skills</h5>
+  <div class="modal fade detail-modal-1" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content text-center">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title text-center">Frontend Skills</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body text-center">
-            <h6>The javascript frameworks I use are <b>React and Vue.</b></h6>
-            <h6>I have a special interest in <b>Solidjs.</b></h6>
-            <h6>
-              The css frameworks I use are
-              <b>Bootstrap Tailwind Styled components.</b>
-            </h6>
-          </div>
-          <!--End modal body-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body text-center">
+          <h6>The javascript frameworks I use are <b>React and Vue.</b></h6>
+          <h6>I have a special interest in <b>Solidjs.</b></h6>
+          <h6>
+            The css frameworks I use are
+            <b>Bootstrap Tailwind Styled components.</b>
+          </h6>
+        </div>
+        <!--End modal body-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade detail-modal-2" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Backend Skills</h5>
+  </div>
+  <div class="modal fade detail-modal-2" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Backend Skills</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body text-center">
-            <h6>
-              I use <b>Nodejs</b> as a working environment in the backend.
-            </h6>
-            <h6>I use express while creating <b>Restful api.</b></h6>
-            <h6>I use <b>Mongodb</b> and <b>Mysql</b> as database.</h6>
-          </div>
-          <!--End modal body-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body text-center">
+          <h6>
+            I use <b>Nodejs</b> as a working environment in the backend.
+          </h6>
+          <h6>I use express while creating <b>Restful api.</b></h6>
+          <h6>I use <b>Mongodb</b> and <b>Mysql</b> as database.</h6>
+        </div>
+        <!--End modal body-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade detail-modal-3" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Database Skills</h5>
+  </div>
+  <div class="modal fade detail-modal-3" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Database Skills</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body text-center">
-            <h6>I use <b>Mongo</b> for database mostly.</h6>
-            <h6>I have basic knowledge of <b>Postgresql.</b></h6>
-            <h6>I used <b>Mssql</b> in desktop applications.</h6>
-          </div>
-          <!--End modal body-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body text-center">
+          <h6>I use <b>Mongo</b> for database mostly.</h6>
+          <h6>I have basic knowledge of <b>Postgresql.</b></h6>
+          <h6>I used <b>Mssql</b> in desktop applications.</h6>
+        </div>
+        <!--End modal body-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade detail-modal-4" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Testing Skills</h5>
+  </div>
+  <div class="modal fade detail-modal-4" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Testing Skills</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body text-center">
-            <h6>Fundamental knowledge on <b>Java, Python, SQL, JSON.</b></h6>
-            <h6><b>Agile</b> Testing and <b>Life Cycle.</b></h6>
-            <h6>
-              I do automation tests with <b>Selenium</b> and <b>Cucumber.</b>
-            </h6>
-            <h6>
-              I do api tests with <b>Postman</b> and <b>Karate framework.</b>
-            </h6>
-          </div>
-          <!--End modal body-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body text-center">
+          <h6>Fundamental knowledge on <b>Java, Python, SQL, JSON.</b></h6>
+          <h6><b>Agile</b> Testing and <b>Life Cycle.</b></h6>
+          <h6>
+            I do automation tests with <b>Selenium</b> and <b>Cucumber.</b>
+          </h6>
+          <h6>
+            I do api tests with <b>Postman</b> and <b>Karate framework.</b>
+          </h6>
+        </div>
+        <!--End modal body-->
       </div>
+      <!--end modal content-->
     </div>
+  </div>
 
-    <div class="modal fade template-modal2" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Software Developer</h5>
+  <div class="modal fade template-modal2" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Software Developer</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body">
-            <h6>Experience</h6>
-            <p>* Applications were developed for live broadcast panels.</p>
-            <p>* Webscraping experience gained with javascript.</p>
-            <p>* Used php and javascript on backend.</p>
-          </div>
-          <!--End modal body-->
-
-          <!--Modal footer-->
-          <div class="modal-footer text-center">
-            <p>
-              <a href="https://badiworks.com/" target="_blank">badiworks.com</a>
-            </p>
-          </div>
-          <!--end modal footer-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Experience</h6>
+          <p>* Applications were developed for live broadcast panels.</p>
+          <p>* Webscraping experience gained with javascript.</p>
+          <p>* Used php and javascript on backend.</p>
+        </div>
+        <!--End modal body-->
+
+        <!--Modal footer-->
+        <div class="modal-footer text-center">
+          <p>
+            <a href="https://badiworks.com/" target="_blank">badiworks.com</a>
+          </p>
+        </div>
+        <!--end modal footer-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade template-modal3" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Frontend Developer</h5>
+  </div>
+  <div class="modal fade template-modal3" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Frontend Developer</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body">
-            <h6>Experience</h6>
-            <p>* Improvements have been made to the frontend and backend.</p>
-            <p>
-              * Sveltejs was used on the javascript side and nodejs was used on
-              the backend. Mongo scheme structure was used in the data part.
-            </p>
-          </div>
-          <!--End modal body-->
-
-          <!--Modal footer-->
-          <div class="modal-footer text-center">
-            <p>
-              <a href="https://sarjagi.com/" target="_blank">sarjagi.com</a>
-            </p>
-          </div>
-          <!--end modal footer-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Experience</h6>
+          <p>* Improvements have been made to the frontend and backend.</p>
+          <p>
+            * Sveltejs was used on the javascript side and nodejs was used on
+            the backend. Mongo scheme structure was used in the data part.
+          </p>
+
+        </div>
+        <!--End modal body-->
+
+        <!--Modal footer-->
+        <div class="modal-footer text-center">
+          <p>
+            <a href="https://sarjagi.com/" target="_blank">sarjagi.com</a>
+          </p>
+        </div>
+        <!--end modal footer-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade template-modal4" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Software Developer</h5>
+  </div>
+  <div class="modal fade template-modal4" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Software Developer</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body">
-            <h6>Experience</h6>
-            <p>
-              * A literature review was conducted in the field of security of
-              iot devices.
-            </p>
-            <p>* Used python language</p>
-            <p>
-              * A python script was developed that scans iot devices for
-              security vulnerabilities.
-            </p>
-          </div>
-          <!--End modal body-->
-
-          <!--Modal footer-->
-          <div class="modal-footer text-center">
-            <p>
-              <a href="http://www.iste.center/" target="_blank"
-                >istecenter.center</a
-              >
-            </p>
-          </div>
-          <!--end modal footer-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <h6>Experience</h6>
+          <p>
+            * A literature review was conducted in the field of security of
+            iot devices.
+          </p>
+          <p>* Used python language</p>
+          <p>
+            * A python script was developed that scans iot devices for
+            security vulnerabilities.
+          </p>
+        </div>
+        <!--End modal body-->
+
+        <!--Modal footer-->
+        <div class="modal-footer text-center">
+          <p>
+            <a href="http://www.iste.center/" target="_blank">istecenter.center</a>
+          </p>
+        </div>
+        <!--end modal footer-->
       </div>
+      <!--end modal content-->
     </div>
-    <div class="modal fade template-modal5" tabindex="1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <!--Modal header-->
-          <div class="modal-header">
-            <!--Modal title-->
-            <h5 class="modal-title">Information</h5>
+  </div>
+  <div class="modal fade template-modal5" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Modal header-->
+        <div class="modal-header">
+          <!--Modal title-->
+          <h5 class="modal-title">Information</h5>
 
-            <!--Modal close-->
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--end modal header-->
-
-          <!--Modal body-->
-          <div class="modal-body">
-            <p>Thanks. I will reply as soon as possible.</p>
-          </div>
-          <!--End modal body-->
+          <!--Modal close-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!--end modal content-->
+        <!--end modal header-->
+
+        <!--Modal body-->
+        <div class="modal-body">
+          <p>Thanks. I will reply as soon as possible.</p>
+        </div>
+        <!--End modal body-->
       </div>
+      <!--end modal content-->
     </div>
+  </div>
 
-    <!--preloader-->
-    <div class="preloader preloader-xl">
-      <div>
-        <p class="loading-text">
-          <span>Ö</span>
-          <span>Y</span>
-          <span>S</span>
-        </p>
-      </div>
+  <!--preloader-->
+  <div class="preloader preloader-xl">
+    <div>
+      <p class="loading-text">
+        <span>Ö</span>
+        <span>Y</span>
+        <span>S</span>
+      </p>
     </div>
+  </div>
 
-    <!--nav-->
-    <nav class="container-fluid">
-      <div class="row elem-border" style="overflow: hidden">
-        <div class="col-sm-8 anchor brand">
-          <h1 class="stretch-text">
-            <a href=" https://www.brutalist.design/">
-              <span class="stretch_it">ÖYS</span>
-            </a>
-          </h1>
-        </div>
-        <div class="col-sm-2 navigation">
-          <ul class="navlist">
-            <li class="anchor"><a href="#team">Technologies</a></li>
-            <!--
-          -->
-            <li class="anchor"><a href="#services">Experiences</a></li>
-            <!--
-          -->
-            <li class="anchor"><a href="#prices">Education</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-2 anchor">
-          <a class="contact" href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <!--end nav-->
-
-    <!--main-->
-    <div class="container-fluid">
-      <div id="team" class="row elem-border">
-        <div class="col-lg-3 col-md-12 team-left">
-          <h3>Technologies</h3>
-        </div>
-        <div class="team-carousel-wrap col-lg-9 col-md-12">
-          <div class="team-carousel owl-carousel owl-theme">
-            <div class="team-member">
-              <div class="team-wrap">
-                <p><span>Frontend</span></p>
-                <div>
-                  <img src="./app/img/web-programming (1).png" alt="" />
-                </div>
-                <span class="team-member-name">
-                  <a
-                    class="btl-anchor"
-                    href="#"
-                    data-toggle="modal"
-                    data-target=".detail-modal-1"
-                    >Click More</a
-                  >
-                </span>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-wrap">
-                <p><span>Backend</span></p>
-                <div>
-                  <img src="./app/img/backend.png" alt="" />
-                </div>
-                <span class="team-member-name">
-                  <a
-                    class="btl-anchor"
-                    href="#"
-                    data-toggle="modal"
-                    data-target=".detail-modal-2"
-                    >Click More</a
-                  >
-                </span>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-wrap">
-                <p><span>Database</span></p>
-                <div>
-                  <img src="./app/img/database.png" alt="" />
-                </div>
-                <span class="team-member-name">
-                  <a
-                    class="btl-anchor"
-                    href="#"
-                    data-toggle="modal"
-                    data-target=".detail-modal-3"
-                    >Click More</a
-                  >
-                </span>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-wrap">
-                <p><span>Software Testing</span></p>
-                <div>
-                  <img src="./app/img/software.png" alt="" />
-                </div>
-                <span class="team-member-name">
-                  <a
-                    class="btl-anchor"
-                    href="#"
-                    data-toggle="modal"
-                    data-target=".detail-modal-4"
-                    >Click More</a
-                  >
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="team-carousel-nav"></div>
-        </div>
-      </div>
-      <!--end team-->
-
-      <!--prices-->
-      <div id="prices" class="row elem-border">
-        <div class="col-lg-2 prices-left">
-          <h3>Education</h3>
-        </div>
-        <div class="col-lg-10">
-          <div class="row prices-right">
-            <div class="col-sm-4 col-12">
-              <div class="prices-wrap">
-                <h4>Bachelor</h4>
-                <p>More Detail</p>
-                <span>&larr;</span>
-              </div>
-              <div class="prices-details">
-                <h5>Istanbul University-Cerrahpaşa</h5>
-                <p>Computer Engineering</p>
-                <p>2019-2023</p>
-                <p>Üniversite, 34320 Avcılar/İstanbul</p>
-
-                <span>&larr;</span>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="prices-wrap">
-                <h4>High School</h4>
-                <p>More Detail</p>
-                <span>&larr;</span>
-              </div>
-              <div class="prices-details">
-                <h5>Mehmet Niyazi Altuğ Anatolian High School</h5>
-                <p>2015-2019</p>
-                <p>34307 / İstanbul</p>
-
-                <span>&larr;</span>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="prices-wrap reveal-left">
-                <h4>Middle School</h4>
-                <p>More Detail</p>
-                <span>&rarr;</span>
-              </div>
-              <div class="prices-details">
-                <h5>Peyami Safa Middle School</h5>
-                <p>2013-2015</p>
-                <p>34218 / İstanbul</p>
-
-                <span>&larr;</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end prices-->
-
-      <!--Gallery-->
-
-      <!--services-->
-      <div id="services" class="row">
-        <div
-          class="col-lg-4 col-md-12 order-2 order-lg-1 order-md-2 order-sm-2"
-        >
-          <div class="row elem-border services-left">
-            <div class="col-lg-12 col-sm-6 col-6">
-              <h4>kolayfirsat</h4>
-              <p>Flutter Developer</p>
-              <br />
-
-              <a
-                href="#"
-                data-toggle="modal"
-                data-target=".template-modal"
-                class=""
-                >Read more</a
-              >
-            </div>
-            <div class="col-lg-12 col-sm-6 col-6" id="badiworks-br">
-              <h4>Badiworks</h4>
-              <p>Software Developer</p>
-              <br />
-              <a href="#" data-toggle="modal" data-target=".template-modal2"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-12 order-1 order-lg-2 order-md-1 order-sm-1 text-center services-center"
-        >
-          <h3>Experiences</h3>
-        </div>
-        <div class="col-lg-4 col-md-12 order-3">
-          <div class="row elem-border services-right">
-            <div class="col-lg-12 col-sm-6 col-6">
-              <h4>sarjagi.com</h4>
-              <p>Frontend Developer</p>
-              <br />
-              <a href="#" data-toggle="modal" data-target=".template-modal3"
-                >Read more</a
-              >
-            </div>
-            <div class="col-lg-12 col-sm-6 col-6" id="badiworks-br">
-              <h4>isteCenter</h4>
-              <p>Software Developer</p>
-              <br />
-              <a href="#" data-toggle="modal" data-target=".template-modal4"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end services-->
-
-      <div
-        id="hero"
-        class="row elem-border"
-        style="border-top: 1px black solid; border-bottom: 1px black solid"
-      >
-        <div class="col-xl-12 col-lg-12 col-md-12 text-center">
-          <a
-            class="cta"
-            target="_blank"
-            href="./app/img/cv_omeryusuf_sorhun.pdf"
-          >
-            <span>Resume</span>
+  <!--nav-->
+  <nav class="container-fluid">
+    <div class="row elem-border" style="overflow: hidden">
+      <div class="col-sm-8 anchor brand">
+        <h1 class="stretch-text">
+          <a href=" https://www.brutalist.design/">
+            <span class="stretch_it">ÖYS</span>
           </a>
+        </h1>
+      </div>
+      <div class="col-sm-2 navigation">
+        <ul class="navlist">
+          <li class="anchor"><a href="#team">Technologies</a></li>
+          <!--
+          -->
+          <li class="anchor"><a href="#services">Experiences</a></li>
+          <!--
+          -->
+          <li class="anchor"><a href="#prices">Projects</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2 anchor">
+        <a class="contact" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!--end nav-->
+
+  <!--main-->
+  <div class="container-fluid">
+    <div id="team" class="row elem-border">
+      <div class="col-lg-3 col-md-12 team-left">
+        <h3>Technologies</h3>
+      </div>
+      <div class="team-carousel-wrap col-lg-9 col-md-12">
+        <div class="team-carousel owl-carousel owl-theme">
+          <div class="team-member">
+            <div class="team-wrap">
+              <p><span>Frontend</span></p>
+              <div>
+                <img src="./app/img/web-programming (1).png" alt="" />
+              </div>
+              <span class="team-member-name">
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-1">Click More</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-wrap">
+              <p><span>Backend</span></p>
+              <div>
+                <img src="./app/img/backend.png" alt="" />
+              </div>
+              <span class="team-member-name">
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-2">Click More</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-wrap">
+              <p><span>Database</span></p>
+              <div>
+                <img src="./app/img/database.png" alt="" />
+              </div>
+              <span class="team-member-name">
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-3">Click More</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-wrap">
+              <p><span>Software Testing</span></p>
+              <div>
+                <img src="./app/img/software.png" alt="" />
+              </div>
+              <span class="team-member-name">
+                <a class="btl-anchor" href="#" data-toggle="modal" data-target=".detail-modal-4">Click More</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="team-carousel-nav"></div>
+      </div>
+    </div>
+    <!--end team-->
+    <div id="services" class="row">
+      <div class="col-lg-4 col-md-12 order-2 order-lg-1 order-md-2 order-sm-2">
+        <div class="row elem-border services-left">
+          <div class="col-lg-12 col-sm-6 col-6">
+            <h4>kolayfirsat</h4>
+            <p>Flutter Developer</p>
+            <br />
+
+            <a href="#" data-toggle="modal" data-target=".template-modal" class="">Read more</a>
+          </div>
+          <div class="col-lg-12 col-sm-6 col-6" id="badiworks-br">
+            <h4>Badiworks</h4>
+            <p>Software Developer</p>
+            <br />
+            <a href="#" data-toggle="modal" data-target=".template-modal2">Read more</a>
+          </div>
         </div>
       </div>
-      <!--endtagline-->
-
-      <!--Contact-->
-      <div id="contact" class="row elem-border">
-        <div
-          class="col-lg-2 col-md-12 order-2 order-lg-1 order-md-2 contact-left"
-        >
-          <ul id="social">
-            <li>
-              <a
-                href="https://github.com/omeryusufsorhun"
-                target="_blank"
-                class="contact"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/omeryusufsorhun/"
-                target="_blank"
-                class="contact"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/omeryusufsrhn/"
-                target="_blank"
-                class="contact"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+      <div class="col-lg-4 col-md-12 order-1 order-lg-2 order-md-1 order-sm-1 text-center services-center">
+        <h3>Experiences</h3>
+      </div>
+      <div class="col-lg-4 col-md-12 order-3">
+        <div class="row elem-border services-right">
+          <div class="col-lg-12 col-sm-6 col-6">
+            <h4>sarjagi.com</h4>
+            <p>Frontend Developer</p>
+            <br />
+            <a href="#" data-toggle="modal" data-target=".template-modal3">Read more</a>
+          </div>
+          <div class="col-lg-12 col-sm-6 col-6" id="badiworks-br">
+            <h4>isteCenter</h4>
+            <p>Software Developer</p>
+            <br />
+            <a href="#" data-toggle="modal" data-target=".template-modal4">Read more</a>
+          </div>
         </div>
-        <div
-          class="col-lg-10 col-md-12 order-1 order-lg-2 order-md-1 contact-right"
-        >
-          <div class="row">
-            <div class="col-md-3 col-sm-12 contact-title">
-              <h3>Contact Form</h3>
+      </div>
+    </div>
+    <!--prices-->
+    <div id="prices" class="row elem-border">
+      <div class="col-lg-2 prices-left">
+        <h3>Projects</h3>
+      </div>
+      <div class="col-lg-10">
+        <div class="row prices-right">
+          <div class="col-sm-4 col-12">
+            <div class="prices-wrap">
+              <h4>Instagram Clone</h4>
+              <p>More Detail</p>
+              <span>&larr;</span>
             </div>
-            <div class="col-md-9 col-sm-12">
-              <form class="contact-form" action="#">
-                <span class="sending">We're Sending Your Message</span>
-                <span class="sent">Message received, we'll be in touch.</span>
-                <div class="form-group">
-                  <label for="contact-name">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="contact-name"
-                    name="contact-name"
-                    placeholder="Name"
-                    required
-                  /><!--
-                --><input
-                    type="email"
-                    class="form-control"
-                    id="contact-email"
-                    name="contact-email"
-                    placeholder="Email"
-                    required
-                  />
-                  <label for="contact-email">Email</label>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="text-right">
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    onclick="SendMail()"
-                  >
-                    Send
-                  </button>
-                </div>
-              </form>
+            <div class="prices-details text-center">
+              <p class="mt-4">Front-End: React, Material-UI, Socket.io-client</p>
+              <p class="mt-2">Back-End: Express, Axios, Mongoose, Socket-io.</p> <br>
+              <a class="btl-anchor mt-2" href="https://github.com/omeryusufsorhun/Instagram-Clone" target="_blank">Click
+                More</a>
+
+
+              <span>&larr;</span>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="prices-wrap">
+              <h4>Full Stack Blog</h4>
+              <p>More Detail</p>
+
+              <span>&larr;</span>
+            </div>
+            <div class="prices-details text-center">
+              <p class="mt-4">Modern Blog Application</p>
+              <p class="mt-2">Register - Login - Add, Delete, Update Posts</p><br>
+              <a class="btl-anchor mt-2" href="https://github.com/omeryusufsorhun/React-Blog-Website"
+                target="_blank">Source
+                Code</a>
+
+              <span>&larr;</span>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="prices-wrap reveal-left">
+              <h4>Social Media App</h4>
+              <p>More Detail</p>
+              <span>&rarr;</span>
+            </div>
+            <div class="prices-details text-center">
+              <p class="mt-4">Modern Social Media App</p>
+              <p class="mt-2">Register - Login - Add, Delete, Update Posts</p><br>
+              <a class="btl-anchor mt-2" href="https://github.com/omeryusufsorhun/Social-Media-App"
+                target="_blank">Source Code</a>
+              <span>&larr;</span>
             </div>
           </div>
         </div>
       </div>
-      <!--end contact-->
-
-      <script>
-        function SendMail() {
-          var params = {
-            from_name: document.getElementById("contact-name").value,
-            email_id: document.getElementById("contact-email").value,
-            message: document.getElementById("message").value,
-          };
-          emailjs
-            .send("service_sjuqhqv", "template_rt05gzl", params)
-            .then(function (res) {
-              $(".template-modal5").modal("show");
-            });
-        }
-      </script>
-      <script>
-        if (window.innerWidth < 768) {
-          var br = document.createElement("br");
-          var targetElement = document.getElementById("job");
-          if (targetElement) {
-            targetElement.appendChild(br);
-          }
-        }
-      </script>
     </div>
-    <!--end main-->
+    <!--end prices-->
 
-    <!--Footer-->
-    <footer class="container-fluid">
-      <div class="row elem-border">
-        <div
-          class="col-12 text-center d-flex justify-content-center align-items-center"
-        >
-          <p>ÖYS © Some rights reserved.</p>
+    <!--Gallery-->
+
+    <!--services-->
+
+    <!--end services-->
+
+    <div id="hero" class="row elem-border" style="border-top: 1px black solid; border-bottom: 1px black solid">
+      <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+        <a class="cta" target="_blank" href="./app/img/cv_omeryusuf_sorhun.pdf">
+          <span>Resume</span>
+        </a>
+      </div>
+    </div>
+    <!--endtagline-->
+
+    <!--Contact-->
+    <div id="contact" class="row elem-border">
+      <div class="col-lg-2 col-md-12 order-2 order-lg-1 order-md-2 contact-left">
+        <ul id="social">
+          <li>
+            <a href="https://github.com/omeryusufsorhun" target="_blank" class="contact">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/omeryusufsorhun/" target="_blank" class="contact">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/omeryusufsrhn/" target="_blank" class="contact">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-10 col-md-12 order-1 order-lg-2 order-md-1 contact-right">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 contact-title">
+            <h3>Contact Form</h3>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <form class="contact-form" action="#">
+              <span class="sending">We're Sending Your Message</span>
+              <span class="sent">Message received, we'll be in touch.</span>
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Name"
+                  required /><!--
+                --><input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email"
+                  required />
+                <label for="contact-email">Email</label>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
+              </div>
+              <div class="text-right">
+                <button type="submit" class="btn btn-primary" onclick="SendMail()">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </footer>
-    <!--end footer-->
+    </div>
+    <!--end contact-->
 
-    <!--jquery-->
-  </body>
+    <script>
+      function SendMail() {
+        var params = {
+          from_name: document.getElementById("contact-name").value,
+          email_id: document.getElementById("contact-email").value,
+          message: document.getElementById("message").value,
+        };
+        emailjs
+          .send("service_sjuqhqv", "template_rt05gzl", params)
+          .then(function (res) {
+            $(".template-modal5").modal("show");
+          });
+      }
+    </script>
+    <script>
+      if (window.innerWidth < 768) {
+        var br = document.createElement("br");
+        var targetElement = document.getElementById("job");
+        if (targetElement) {
+          targetElement.appendChild(br);
+        }
+      }
+    </script>
+  </div>
+  <!--end main-->
 
-  <!-- Mirrored from www.brutalist.design/brutal-design-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Apr 2023 22:29:28 GMT -->
+  <!--Footer-->
+  <footer class="container-fluid">
+    <div class="row elem-border">
+      <div class="col-12 text-center d-flex justify-content-center align-items-center">
+        <p>ÖYS © Some rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--end footer-->
+
+  <!--jquery-->
+</body>
+
+<!-- Mirrored from www.brutalist.design/brutal-design-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Apr 2023 22:29:28 GMT -->
+
 </html>
