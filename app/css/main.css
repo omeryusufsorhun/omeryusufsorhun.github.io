@@ -13632,6 +13632,7 @@ div#team div.team-carousel-wrap div.team-carousel-nav {
 div#team div.team-carousel-wrap div.team-carousel .owl-nav {
   position: absolute;
   bottom: -60px;
+  border-bottom: 1px black solid;
   width: 100%;
   margin: 0;
 }
@@ -13696,13 +13697,14 @@ div#team div.team-wrap p > span {
   }
 }
 div#team div.team-wrap div {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 45%;
   border: solid 1px #000;
   border-radius: 100%;
   width: 150px;
   height: 150px;
-  display: inline-block;
   left: 35px;
   right: 0;
   margin: -75px auto 0;
@@ -13716,15 +13718,15 @@ div#team div.team-wrap div {
 div#team div.team-wrap div img {
   -o-object-fit: cover;
   object-fit: cover;
-  width: 100%;
-  height: auto;
-  top: -1px;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
 }
 @media (max-width: 991.98px) {
   div#team div.team-wrap div img {
-    width: 100%;
-    height: auto;
-    top: 0;
+    width: 100px;
+
+    height: 100px;
   }
 }
 div#team div.team-wrap span.team-member-name {
