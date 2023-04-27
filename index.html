@@ -4,7 +4,39 @@
 
 <head>
   <script>
+    function replaceFragmentIdentifier() {
+      var new_id = '';
+      switch (window.location.hash) {
+        case '#team':
+          new_id = 'technologies';
+          break;
+        case '#prices':
+          new_id = 'projects';
+          break;
+        case '#services':
+          new_id = 'experiences';
+          break;
+        // Daha fazla case eklenebilir
+      }
+      if (new_id !== '') {
+        var new_url = window.location.href.replace(window.location.hash, '#' + new_id);
+        window.history.replaceState(null, null, new_url);
+      }
+    }
 
+    document.addEventListener('DOMContentLoaded', function () {
+      replaceFragmentIdentifier();
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (event) {
+          event.preventDefault();
+          var fragment = this.getAttribute('href');
+          var new_url = window.location.href.replace(window.location.hash, fragment);
+          window.history.pushState(null, null, new_url);
+          replaceFragmentIdentifier();
+
+        });
+      });
+    });
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110940506-1"></script>
