@@ -64,22 +64,22 @@
         } else if (hash === "#services") {
           window.location.hash = "#experiences";
         }
-      };
-      function changeHash() {
-        let hash = window.location.hash;
-        if (hash === "#team") {
-          window.location.hash = "#technologies";
-        }
-        if (hash === "#prices") {
-          window.location.hash = "#education";
-        }
-        if (hash === "#services") {
-          window.location.hash = "#experiences";
-        }
-        console.log(window.location.hash);
-      }
 
-      window.addEventListener("hashchange", changeHash);
+        function changeHash() {
+          let hash = window.location.hash;
+          if (hash === "#team") {
+            window.location.hash = "#technologies";
+          }
+          if (hash === "#prices") {
+            window.location.hash = "#education";
+          }
+          if (hash === "#services") {
+            window.location.hash = "#experiences";
+          }
+          console.log(window.location.hash);
+          window.addEventListener("hashchange", changeHash);
+        }
+      };
 
       // Diğer kodlar buraya gelecek
     </script>
