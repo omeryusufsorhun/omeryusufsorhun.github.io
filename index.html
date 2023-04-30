@@ -666,17 +666,23 @@
 
     <script>
       function SendMail() {
+        var email = document.getElementById("contact-email").value;
+        var email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email_regex.test(email)) {
+          alert("Lütfen geçerli bir e-posta adresi girin.");
+          return;
+        }
         var params = {
           from_name: document.getElementById("contact-name").value,
-          email_id: document.getElementById("contact-email").value,
+          email_id: email,
           message: document.getElementById("message").value,
         };
-        emailjs
-          .send("service_sjuqhqv", "template_rt05gzl", params)
+        emailjs.send("service_sjuqhqv", "template_rt05gzl", params)
           .then(function (res) {
             $(".template-modal5").modal("show");
           });
       }
+
     </script>
     <script>
       if (window.innerWidth < 768) {
