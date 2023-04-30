@@ -12458,7 +12458,6 @@ div#prices {
 }
 div#prices div.prices-left {
   position: relative;
-  border-right: none;
 }
 div#prices h3 {
   position: absolute;
@@ -12488,9 +12487,7 @@ div#prices:hover .prices-left {
 div#prices:hover .prices-left h3 {
   color: #fff;
 }
-div#prices > div {
-  border-top: transparent;
-}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   div#prices > div {
     border-top: solid 1px #000;
