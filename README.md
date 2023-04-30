@@ -1,3 +1,3 @@
 # My Portfolio
 
-[Live Portfolio](https://www.google.com)
+[Live Portfolio]([https://www.google.com](https://omeryusufsorhun.github.io/))
