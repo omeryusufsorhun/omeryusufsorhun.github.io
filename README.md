@@ -1,3 +1,3 @@
 # My Portfolio
 
-live : omeryusufsorhun.github.io
+[Live Portfolio](https://www.google.com)
