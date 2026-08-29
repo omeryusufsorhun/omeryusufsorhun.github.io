@@ -25,14 +25,20 @@
   max-width: 100%;
   overflow: hidden;
   vertical-align: bottom;
-  animation: type 1.1s steps(var(--chars, 17), end) 0.15s both;
+  animation: type 10s 0.15s infinite both;
 }
 
+/* One 10s cycle: type over the first 1.1s, then hold the finished name.
+   The steps() lives on the 0% keyframe so it governs only the typing segment —
+   putting it in the shorthand would stretch 17 steps across the whole cycle. */
 @keyframes type {
-  from {
+  0% {
     width: 0;
+    animation-timing-function: steps(var(--chars, 17), end);
   }
-  to {
+
+  11%,
+  100% {
     width: calc(var(--chars, 17) * 1ch);
   }
 }
