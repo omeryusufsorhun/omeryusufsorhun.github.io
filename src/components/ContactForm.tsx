@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import emailjs from '@emailjs/browser'
 import './ContactForm.css'
 
-const SERVICE_ID = 'service_sjuqhqv'
+const SERVICE_ID = 'service_uoygo1v'
 const TEMPLATE_ID = 'template_rt05gzl'
 const PUBLIC_KEY = '4y53nE57BGeNERzC4'
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
