@@ -1,0 +1,13 @@
+.theme-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--muted);
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.theme-toggle .on {
+  color: var(--accent);
+}
