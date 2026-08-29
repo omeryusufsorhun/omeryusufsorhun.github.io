@@ -1,4 +1,23 @@
-import { marked } from 'marked'
+import { Marked } from 'marked'
+
+// Notes render through dangerouslySetInnerHTML, so nothing executable may
+// survive the markdown parse. Two holes have to be closed: raw HTML tokens
+// (<script>, onerror=...) and link hrefs, which marked passes through verbatim
+// including javascript: and data: URIs. Normal markdown is untouched — code
+// fences still escape their own contents.
+const SAFE_SCHEME = /^(?:https?:|mailto:|[#/]|\.{1,2}\/)/i
+
+const markdown = new Marked({
+  renderer: {
+    html: () => '',
+    link({ href, title, text }) {
+      if (!SAFE_SCHEME.test(href.trim())) return text
+      const attrs = title ? ` title="${title}"` : ''
+      const external = /^https?:/i.test(href) ? ' target="_blank" rel="noopener noreferrer"' : ''
+      return `<a href="${href}"${attrs}${external}>${text}</a>`
+    },
+  },
+})
 
 export interface Note {
   slug: string
@@ -27,7 +46,7 @@ export function parseNote(slug: string, raw: string): Note {
     slug,
     title: meta.title ?? slug,
     date: meta.date ?? '',
-    html: marked.parse(body, { async: false }) as string,
+    html: markdown.parse(body, { async: false }) as string,
   }
 }
 
