@@ -8,8 +8,6 @@ React + Vite + TypeScript, deployed to GitHub Pages from `main` by GitHub Action
 
     npm install       install dependencies
     npm run dev       local dev server
-    npm test          unit tests (Vitest)
-    npm run test:e2e  browser smoke test (Playwright)
     npm run build     build into dist/
     npm run preview   serve the built site locally
 

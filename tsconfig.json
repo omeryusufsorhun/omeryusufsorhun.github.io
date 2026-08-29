@@ -16,17 +16,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": [
-      "node",
-      "vitest/globals",
-      "@testing-library/jest-dom"
-    ]
+    "types": []
   },
   "include": [
     "src",
     "vite.config.ts"
-  ],
-  "exclude": [
-    "e2e"
   ]
 }
