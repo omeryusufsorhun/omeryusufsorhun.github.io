@@ -1,9 +1,9 @@
 .identity {
-  padding: calc(var(--step) * 6) 0 calc(var(--step) * 2);
+  padding: var(--space-xl) 0 0;
 }
 
 .identity-handles {
-  margin: 0 0 calc(var(--step) * 1.5);
+  margin: 0 0 var(--space-s);
   color: var(--muted);
   font-size: 10px;
   letter-spacing: 0.04em;
@@ -37,17 +37,17 @@
 }
 
 .identity-role {
-  margin: calc(var(--step)) 0 0;
+  margin: var(--space-s) 0 0;
   color: var(--muted);
 }
 
 .identity-summary {
   max-width: 62ch;
-  margin: calc(var(--step) * 2) 0 0;
+  margin: var(--space-m) 0 0;
 }
 
 .identity-links {
-  margin: calc(var(--step) * 2) 0 0;
+  margin: var(--space-m) 0 0;
 }
 
 .identity-links a {

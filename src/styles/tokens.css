@@ -20,4 +20,12 @@ html[data-theme='light'] {
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
   --measure: 760px;
   --step: 8px;
+
+  /* One spacing scale for the whole page. Nothing may invent its own value:
+     hierarchy comes from these steps being visibly different from each other. */
+  --space-xs: 6px;   /* inside a single thought: label to its field */
+  --space-s: 12px;   /* between tightly related lines */
+  --space-m: 22px;   /* between paragraphs / distinct thoughts */
+  --space-l: 36px;   /* between rows of a list */
+  --space-xl: 64px;  /* between sections */
 }

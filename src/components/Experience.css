@@ -1,10 +1,10 @@
 .section {
-  padding-top: calc(var(--step) * 4);
+  padding-top: var(--space-xl);
 }
 
 .section > .label {
-  margin: 0 0 calc(var(--step));
-  padding-top: calc(var(--step) * 2);
+  margin: 0 0 var(--space-s);
+  padding-top: var(--space-m);
   border-top: 1px solid var(--rule);
 }
 
@@ -14,26 +14,28 @@
 }
 
 .experience td {
-  padding: calc(var(--step)) 0;
+  padding: var(--space-m) 0;
   border-top: 1px solid var(--rule);
   vertical-align: top;
 }
 
 .experience tr:first-child td {
+  /* The section label already provides the space above the first row. */
+  padding-top: 0;
   border-top: 0;
 }
 
 .experience .period {
-  /* Selector is scoped so it outranks `.experience td`, which sets padding: 8px 0. */
-  width: 168px;
-  padding-right: calc(var(--step) * 3);
+  /* Selector is scoped so it outranks `.experience td`, which sets the block padding. */
+  width: 146px;
+  padding-right: var(--space-m);
   white-space: nowrap;
   color: var(--muted);
 }
 
 .experience .org {
-  width: 188px;
-  padding-right: calc(var(--step) * 3);
+  width: 180px;
+  padding-right: var(--space-m);
   color: var(--heading);
 }
 
@@ -45,7 +47,7 @@
 }
 
 .tech {
-  margin-top: calc(var(--step) * 0.5);
+  margin-top: var(--space-s);
 }
 
 @media (max-width: 640px) {
@@ -60,7 +62,7 @@
 
   .experience tr {
     display: block;
-    padding: calc(var(--step) * 1.5) 0;
+    padding: var(--space-m) 0;
     border-top: 1px solid var(--rule);
   }
 }

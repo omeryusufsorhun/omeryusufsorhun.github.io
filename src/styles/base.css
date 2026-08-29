@@ -30,7 +30,7 @@ body {
 main {
   max-width: var(--measure);
   margin: 0 auto;
-  padding-bottom: calc(var(--step) * 10);
+  padding-bottom: calc(var(--space-xl) * 1.5);
 }
 
 h1,

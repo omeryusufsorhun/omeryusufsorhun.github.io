@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import emailjs from '@emailjs/browser'
+import type { ProfileLink } from '../data/profile'
 import './ContactForm.css'
 
 const SERVICE_ID = 'service_sjuqhqv'
@@ -9,7 +10,7 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
-export default function ContactForm() {
+export default function ContactForm({ handles }: { handles: ProfileLink[] }) {
   const [status, setStatus] = useState<Status>('idle')
   const [error, setError] = useState('')
 
@@ -83,8 +84,11 @@ export default function ContactForm() {
         {status === 'sent' && <p role="status">Message sent. I will get back to you.</p>}
       </form>
       <p className="contact-links">
-        <a href="https://github.com/omeryusufsorhun">github</a>
-        <a href="https://linkedin.com/in/omeryusufsorhun">linkedin</a>
+        {handles.map((handle) => (
+          <a key={handle.href} href={handle.href}>
+            {handle.label}
+          </a>
+        ))}
       </p>
     </section>
   )
