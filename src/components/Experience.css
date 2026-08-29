@@ -23,15 +23,18 @@
   border-top: 0;
 }
 
-.period {
-  width: 128px;
+.experience .period {
+  /* Selector is scoped so it outranks `.experience td`, which sets padding: 8px 0. */
+  width: 168px;
+  padding-right: calc(var(--step) * 3);
+  white-space: nowrap;
   color: var(--muted);
 }
 
-.org {
-  width: 152px;
+.experience .org {
+  width: 188px;
+  padding-right: calc(var(--step) * 3);
   color: var(--heading);
-  padding-right: calc(var(--step) * 2);
 }
 
 .role,
@@ -46,7 +49,9 @@
 }
 
 @media (max-width: 640px) {
-  .experience td {
+  .experience td,
+  .experience .period,
+  .experience .org {
     display: block;
     width: auto;
     border-top: 0;
