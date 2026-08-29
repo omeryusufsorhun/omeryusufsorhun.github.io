@@ -43,7 +43,11 @@ export default function ContactForm() {
       )
       setStatus('sent')
       form.reset()
-    } catch {
+    } catch (cause) {
+      // EmailJS failures are all surfaced to the visitor the same way, but the
+      // underlying reason (expired Gmail grant, quota, blocked origin) only
+      // shows up here.
+      console.error('Contact form send failed:', cause)
       setError('Sending failed. Reach me on LinkedIn instead.')
       setStatus('error')
     }
