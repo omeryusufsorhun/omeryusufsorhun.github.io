@@ -56,6 +56,24 @@ a:hover {
   outline-offset: 2px;
 }
 
+/* One button treatment for the whole page: accent border, body-coloured text,
+   no fill, no radius. The border carries the emphasis so the accent stays rare. */
+.btn {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-s);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--accent);
+}
+
 .label {
   color: var(--muted);
   font-size: 10px;

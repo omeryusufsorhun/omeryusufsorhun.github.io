@@ -37,11 +37,6 @@
   align-self: flex-start;
   margin-top: var(--space-m);
   padding: var(--space-s) var(--space-m);
-  border: 1px solid var(--accent);
-  background: transparent;
-  color: var(--accent);
-  font: inherit;
-  cursor: pointer;
 }
 
 .contact button:disabled {

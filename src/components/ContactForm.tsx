@@ -75,7 +75,7 @@ export default function ContactForm() {
           aria-hidden="true"
         />
 
-        <button type="submit" disabled={status === 'sending'}>
+        <button className="btn" type="submit" disabled={status === 'sending'}>
           {status === 'sending' ? 'sending…' : 'send'}
         </button>
 

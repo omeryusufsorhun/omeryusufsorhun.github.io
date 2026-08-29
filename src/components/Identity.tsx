@@ -6,7 +6,7 @@ export default function Identity({ profile }: { profile: Profile }) {
     <header className="identity">
       <p className="identity-handles">
         {profile.handles.map((handle) => (
-          <a key={handle.href} href={handle.href}>
+          <a className="btn" key={handle.href} href={handle.href}>
             {handle.label}
           </a>
         ))}
@@ -21,7 +21,7 @@ export default function Identity({ profile }: { profile: Profile }) {
       <p className="identity-summary">{profile.summary}</p>
       <p className="identity-links">
         {profile.links.map((link) => (
-          <a key={link.href} href={link.href}>
+          <a className="btn" key={link.href} href={link.href}>
             {link.label}
           </a>
         ))}
