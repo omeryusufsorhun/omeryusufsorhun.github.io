@@ -12,7 +12,9 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # A cancelled deploy can leave the Pages environment on a stale build, so let
+  # an in-flight publish finish — this matches GitHub's own Pages workflow.
+  cancel-in-progress: false
 
 jobs:
   build:

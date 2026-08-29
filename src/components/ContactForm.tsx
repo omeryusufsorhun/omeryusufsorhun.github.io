@@ -21,7 +21,18 @@ export default function ContactForm() {
     // Honeypot: a real person never sees this field, so anything in it is a bot.
     if (String(data.get('company') ?? '').trim() !== '') return
 
+    // noValidate turns off the browser's own required-field enforcement, so
+    // every field has to be checked here or an empty message can be sent.
+    const name = String(data.get('name') ?? '').trim()
+    const message = String(data.get('message') ?? '').trim()
     const email = String(data.get('email') ?? '').trim()
+
+    if (!name || !message) {
+      setError('Please fill in your name and a message.')
+      setStatus('error')
+      return
+    }
+
     if (!EMAIL.test(email)) {
       setError('Please enter a valid email address.')
       setStatus('error')
@@ -35,9 +46,9 @@ export default function ContactForm() {
         SERVICE_ID,
         TEMPLATE_ID,
         {
-          from_name: String(data.get('name') ?? '').trim(),
+          from_name: name,
           email_id: email,
-          message: String(data.get('message') ?? '').trim(),
+          message,
         },
         { publicKey: PUBLIC_KEY },
       )
