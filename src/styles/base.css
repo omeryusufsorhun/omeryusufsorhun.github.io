@@ -75,9 +75,9 @@ a:hover {
 }
 
 .label {
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  color: var(--heading);
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
