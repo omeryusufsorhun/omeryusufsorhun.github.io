@@ -26,7 +26,7 @@ export const stack: StackGroup[] = [
   },
   {
     label: 'practices',
-    items: ['BDD', 'Agile', 'REST APIs'],
+    items: ['BDD', 'Agile', 'REST APIs', 'AI-assisted testing'],
   },
   {
     label: 'ci & tooling',

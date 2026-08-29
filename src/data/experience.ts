@@ -22,7 +22,7 @@ export const roles: Role[] = [
     start: '2026-03',
     end: null,
     detail:
-      'Automated test suites for a multi-tenant B2B SaaS engagement platform in Python and Selenium WebDriver, covering onsite analytics, web push and campaign management. End-to-end testing of attribution and conversion flows across event-driven data pipelines, on isolated staging environments with namespace-based routing.',
+      'Automated test suites for a multi-tenant B2B SaaS engagement platform in Python and Selenium WebDriver, covering onsite analytics, web push and campaign management. End-to-end testing of attribution and conversion flows across event-driven data pipelines, on isolated staging environments with namespace-based routing. Built AI into the daily QA loop: agent-driven exploratory runs against feature environments, AI-generated test cases maintained in BrowserStack Test Management, and AI-assisted review of pull requests for regression risk.',
     tech: 'Python, Selenium WebDriver, BrowserStack, Git, GitLab, JIRA, Confluence',
   },
   {
