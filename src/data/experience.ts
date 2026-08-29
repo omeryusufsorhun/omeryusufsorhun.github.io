@@ -43,15 +43,6 @@ export const roles: Role[] = [
       'Functional and API testing for a cross-platform Flutter application on iOS, Android and web; UAT across platforms.',
     tech: 'Flutter, Dart, Postman, JIRA',
   },
-  {
-    org: 'sarjagi.com',
-    role: 'Front-End Developer',
-    start: '2022-08',
-    end: '2022-12',
-    detail:
-      'Frontend pages in JavaScript and Svelte.js with a Node.js backend and Mongoose schemas; web scraping, bug fixing and UX work in an Agile team.',
-    tech: 'JavaScript, Svelte.js, Node.js, MongoDB',
-  },
 ]
 
 export const education: Education = {

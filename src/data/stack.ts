@@ -25,6 +25,10 @@ export const stack: StackGroup[] = [
     ],
   },
   {
+    label: 'practices',
+    items: ['BDD', 'Agile', 'REST APIs'],
+  },
+  {
     label: 'ci & tooling',
     items: [
       'Git',
@@ -47,6 +51,7 @@ export const stack: StackGroup[] = [
       'Node.js',
       'Flutter',
       'Tailwind CSS',
+      'Bootstrap',
       'MongoDB',
       'BigQuery',
       'Neo4j',
