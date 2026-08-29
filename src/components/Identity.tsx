@@ -4,6 +4,13 @@ import './Identity.css'
 export default function Identity({ profile }: { profile: Profile }) {
   return (
     <header className="identity">
+      <p className="identity-handles">
+        {profile.handles.map((handle) => (
+          <a key={handle.href} href={handle.href}>
+            {handle.label}
+          </a>
+        ))}
+      </p>
       <h1>
         {profile.name}
         <span className="caret" aria-hidden="true" />

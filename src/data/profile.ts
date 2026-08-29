@@ -8,6 +8,7 @@ export interface Profile {
   role: string
   location: string
   summary: string
+  handles: ProfileLink[]
   links: ProfileLink[]
 }
 
@@ -17,9 +18,9 @@ export const profile: Profile = {
   location: 'istanbul',
   summary:
     'I test software. My job is finding what is broken, proving it is broken, and pinning it down with a test so it stays fixed.',
-  links: [
-    { label: 'cv.pdf', href: '/cv.pdf' },
-    { label: 'github', href: 'https://github.com/omeryusufsorhun' },
-    { label: 'linkedin', href: 'https://linkedin.com/in/omeryusufsorhun' },
+  handles: [
+    { label: 'github.com/omeryusufsorhun', href: 'https://github.com/omeryusufsorhun' },
+    { label: 'linkedin.com/in/omeryusufsorhun', href: 'https://linkedin.com/in/omeryusufsorhun' },
   ],
+  links: [{ label: 'cv.pdf', href: '/cv.pdf' }],
 }

@@ -2,6 +2,24 @@
   padding: calc(var(--step) * 6) 0 calc(var(--step) * 2);
 }
 
+.identity-handles {
+  margin: 0 0 calc(var(--step) * 1.5);
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.identity-handles a {
+  margin-right: calc(var(--step) * 2);
+  border-bottom-color: transparent;
+  color: var(--muted);
+}
+
+.identity-handles a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--text);
+}
+
 .identity h1 {
   margin: 0;
   font-size: clamp(23px, 7vw, 31px);
@@ -44,5 +62,10 @@
   .identity-links a {
     display: inline-block;
     margin-bottom: calc(var(--step) * 0.5);
+  }
+
+  .identity-handles a {
+    display: block;
+    margin: 0 0 calc(var(--step) * 0.5);
   }
 }
