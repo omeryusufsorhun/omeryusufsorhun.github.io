@@ -1,0 +1,27 @@
+.note {
+  padding: calc(var(--step) * 1.5) 0;
+  border-top: 1px solid var(--rule);
+}
+
+.note:first-of-type {
+  border-top: 0;
+}
+
+.note h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.note-date {
+  margin: calc(var(--step) * 0.5) 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.note-body {
+  max-width: 66ch;
+}
+
+.note-body a {
+  border-bottom-color: var(--accent);
+}
