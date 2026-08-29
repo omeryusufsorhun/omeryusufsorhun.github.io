@@ -1,0 +1,36 @@
+.identity {
+  padding: calc(var(--step) * 6) 0 calc(var(--step) * 2);
+}
+
+.identity h1 {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.05;
+}
+
+.caret {
+  display: inline-block;
+  width: 12px;
+  height: 22px;
+  margin-left: 4px;
+  vertical-align: -4px;
+  background: var(--accent);
+}
+
+.identity-role {
+  margin: calc(var(--step)) 0 0;
+  color: var(--muted);
+}
+
+.identity-summary {
+  max-width: 62ch;
+  margin: calc(var(--step) * 2) 0 0;
+}
+
+.identity-links {
+  margin: calc(var(--step) * 2) 0 0;
+}
+
+.identity-links a {
+  margin-right: calc(var(--step) * 2);
+}
