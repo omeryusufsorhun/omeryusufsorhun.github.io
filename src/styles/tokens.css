@@ -1,0 +1,23 @@
+html[data-theme='dark'] {
+  --bg: #0B0B0B;
+  --text: #C9C9C9;
+  --heading: #FFFFFF;
+  --rule: #232323;
+  --muted: #5A5A5A;
+  --accent: #00FF9C;
+}
+
+html[data-theme='light'] {
+  --bg: #FBFAF6;
+  --text: #1A1A1A;
+  --heading: #000000;
+  --rule: #DEDCD2;
+  --muted: #8A8A82;
+  --accent: #1A47FF;
+}
+
+:root {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  --measure: 760px;
+  --step: 8px;
+}
