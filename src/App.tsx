@@ -12,7 +12,7 @@ import { loadNotes } from './notes'
 
 export default function App() {
   const notes = loadNotes()
-  const sections = ['experience', 'education', 'stack', ...(notes.length > 0 ? ['notes'] : []), 'contact']
+  const sections = ['experience', 'stack', 'education', ...(notes.length > 0 ? ['notes'] : []), 'contact']
 
   return (
     <>
@@ -20,8 +20,8 @@ export default function App() {
       <main>
         <Identity profile={profile} />
         <Experience roles={roles} />
-        <Education education={education} />
         <Stack groups={stack} />
+        <Education education={education} />
         <Notes notes={notes} />
         <ContactForm />
       </main>
