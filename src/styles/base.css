@@ -7,11 +7,18 @@
 
 html {
   background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
   margin: 0;
-  padding: 0 calc(var(--step) * 3);
+  padding: 0 clamp(14px, 4vw, 24px);
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-mono);
@@ -63,4 +70,9 @@ a:hover {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+/* Anchor targets clear the sticky top bar. */
+section[id] {
+  scroll-margin-top: 52px;
 }
