@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Lowercase o-umlaut drawn as geometry, not text, so the glyph is identical
+       on every platform regardless of the installed monospace font. -->
   <rect width="32" height="32" fill="#0B0B0B"/>
-  <rect x="12" y="7" width="8" height="18" fill="#00FF9C"/>
+  <circle cx="16" cy="20.5" r="6.4" fill="none" stroke="#00FF9C" stroke-width="3.2"/>
+  <circle cx="12.2" cy="8.6" r="2" fill="#00FF9C"/>
+  <circle cx="19.8" cy="8.6" r="2" fill="#00FF9C"/>
 </svg>
