@@ -55,13 +55,6 @@
   color: var(--heading);
 }
 
-.contact-links {
-  margin-top: var(--space-m);
-}
-
-.contact-links a {
-  margin-right: calc(var(--step) * 2);
-}
 
 .honeypot {
   position: absolute;
@@ -71,10 +64,3 @@
   opacity: 0;
 }
 
-@media (max-width: 640px) {
-  /* Full addresses are too long to sit side by side on a phone. */
-  .contact-links a {
-    display: block;
-    margin: 0 0 var(--space-xs);
-  }
-}

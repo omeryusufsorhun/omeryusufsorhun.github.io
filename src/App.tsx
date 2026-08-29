@@ -20,7 +20,7 @@ export default function App() {
         <Experience roles={roles} education={education} />
         <Stack groups={stack} />
         <Notes notes={notes} />
-        <ContactForm handles={profile.handles} />
+        <ContactForm />
       </main>
     </>
   )

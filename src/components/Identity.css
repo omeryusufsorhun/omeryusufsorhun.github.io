@@ -1,23 +1,26 @@
 .identity {
-  padding: var(--space-xl) 0 0;
+  padding: var(--space-l) 0 0;
 }
 
 .identity-handles {
-  margin: 0 0 var(--space-s);
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.04em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin: 0 0 var(--space-m);
 }
 
+/* Outlined in the accent, lettered in the body colour: the border carries the
+   emphasis so the page does not gain two more bright green words. */
 .identity-handles a {
-  margin-right: calc(var(--step) * 2);
-  border-bottom-color: transparent;
-  color: var(--muted);
+  padding: var(--space-xs) var(--space-s);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font-size: 11px;
+  letter-spacing: 0.02em;
 }
 
 .identity-handles a:hover {
-  border-bottom-color: var(--accent);
-  color: var(--text);
+  color: var(--accent);
 }
 
 .identity h1 {
@@ -56,7 +59,7 @@
 
 @media (max-width: 640px) {
   .identity {
-    padding-top: calc(var(--step) * 4);
+    padding-top: var(--space-m);
   }
 
   .identity-links a {
@@ -64,8 +67,9 @@
     margin-bottom: calc(var(--step) * 0.5);
   }
 
-  .identity-handles a {
-    display: block;
-    margin: 0 0 calc(var(--step) * 0.5);
+  .identity-handles {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
   }
 }
