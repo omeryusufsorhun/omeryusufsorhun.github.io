@@ -94,3 +94,14 @@ a:hover {
 section[id] {
   scroll-margin-top: 52px;
 }
+
+/* Shared by every <section className="section"> on the page. */
+.section {
+  padding-top: var(--space-xl);
+}
+
+.section > .label {
+  margin: 0 0 var(--space-s);
+  padding-top: var(--space-m);
+  border-top: 1px solid var(--rule);
+}

@@ -1,6 +1,6 @@
-import type { Education, Role } from '../data/experience'
+import type { Role } from '../data/experience'
 import { sortRoles } from '../data/experience'
-import './Experience.css'
+import '../styles/timeline.css'
 
 function period(role: Role): string {
   const start = role.start.replace('-', '.')
@@ -8,17 +8,11 @@ function period(role: Role): string {
   return `${start} – ${role.end.replace('-', '.')}`
 }
 
-export default function Experience({
-  roles,
-  education,
-}: {
-  roles: Role[]
-  education: Education
-}) {
+export default function Experience({ roles }: { roles: Role[] }) {
   return (
     <section id="experience" className="section">
       <h2 className="label">experience</h2>
-      <table className="experience">
+      <table className="timeline">
         <caption className="visually-hidden">Experience</caption>
         <tbody>
           {sortRoles(roles).map((role) => (
@@ -34,16 +28,6 @@ export default function Experience({
               </td>
             </tr>
           ))}
-          <tr>
-            <td className="period">
-              {education.start} – {education.end}
-            </td>
-            <td className="org">
-              {education.school}
-              <span className="role">{education.degree}</span>
-            </td>
-            <td className="detail">{education.note}</td>
-          </tr>
         </tbody>
       </table>
     </section>

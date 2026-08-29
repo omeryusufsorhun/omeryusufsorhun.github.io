@@ -1,4 +1,5 @@
 import ContactForm from './components/ContactForm'
+import Education from './components/Education'
 import Experience from './components/Experience'
 import Identity from './components/Identity'
 import Notes from './components/Notes'
@@ -11,13 +12,15 @@ import { loadNotes } from './notes'
 
 export default function App() {
   const notes = loadNotes()
+  const sections = ['experience', 'education', 'stack', ...(notes.length > 0 ? ['notes'] : []), 'contact']
 
   return (
     <>
-      <TopBar sections={notes.length > 0 ? ['experience', 'stack', 'notes', 'contact'] : ['experience', 'stack', 'contact']} />
+      <TopBar sections={sections} />
       <main>
         <Identity profile={profile} />
-        <Experience roles={roles} education={education} />
+        <Experience roles={roles} />
+        <Education education={education} />
         <Stack groups={stack} />
         <Notes notes={notes} />
         <ContactForm />
