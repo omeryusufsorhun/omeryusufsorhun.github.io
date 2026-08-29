@@ -41,3 +41,16 @@
     gap: calc(var(--step) * 1.5);
   }
 }
+
+@media (max-width: 480px) {
+  /* Four nav items plus the theme switch stop fitting on one line around here;
+     wrap instead of letting the switch hang off the right edge. */
+  .topbar {
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-s);
+  }
+
+  .topbar nav {
+    gap: var(--space-s);
+  }
+}

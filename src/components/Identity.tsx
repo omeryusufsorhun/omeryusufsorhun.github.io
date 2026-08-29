@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import type { Profile } from '../data/profile'
 import './Identity.css'
 
@@ -12,7 +13,9 @@ export default function Identity({ profile }: { profile: Profile }) {
         ))}
       </p>
       <h1>
-        {profile.name}
+        <span className="typed" style={{ '--chars': profile.name.length } as CSSProperties}>
+          {profile.name}
+        </span>
         <span className="caret" aria-hidden="true" />
       </h1>
       <p className="identity-role">

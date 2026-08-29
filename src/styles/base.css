@@ -95,6 +95,13 @@ section[id] {
   scroll-margin-top: 52px;
 }
 
+@media (max-width: 480px) {
+  /* The top bar wraps to two lines at this width, so anchors must clear more. */
+  section[id] {
+    scroll-margin-top: 76px;
+  }
+}
+
 /* Shared by every <section className="section"> on the page. */
 .section {
   padding-top: var(--space-xl);
