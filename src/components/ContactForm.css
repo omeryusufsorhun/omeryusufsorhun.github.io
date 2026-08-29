@@ -1,0 +1,67 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--step) * 0.5);
+  max-width: 460px;
+}
+
+.contact label {
+  margin-top: calc(var(--step));
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact input,
+.contact textarea {
+  padding: calc(var(--step));
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact button {
+  align-self: flex-start;
+  margin-top: calc(var(--step) * 2);
+  padding: calc(var(--step)) calc(var(--step) * 2);
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact button:disabled {
+  border-color: var(--rule);
+  color: var(--muted);
+  cursor: default;
+}
+
+.contact [role='alert'],
+.contact [role='status'] {
+  color: var(--heading);
+}
+
+.contact-links {
+  margin-top: calc(var(--step) * 2);
+}
+
+.contact-links a {
+  margin-right: calc(var(--step) * 2);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}

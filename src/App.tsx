@@ -1,3 +1,4 @@
+import ContactForm from './components/ContactForm'
 import Experience from './components/Experience'
 import Identity from './components/Identity'
 import Notes from './components/Notes'
@@ -19,6 +20,7 @@ export default function App() {
         <Experience roles={roles} education={education} />
         <Stack groups={stack} />
         <Notes notes={notes} />
+        <ContactForm />
       </main>
     </>
   )
